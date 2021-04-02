@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="Avenir Next Font" rel="stylesheet">
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style media="screen">
+
+body{
+  font-family: 'Avenir Next' monospace;
+}
+
+      .лого {
+        position: absolute;
+        width: 168px;
+        height: 60px;
+        left: 1240px;
+        right: 30px;
+        top: 30px;
+      }
+
+      .фон3 {
+        position: absolute;
+        width: 1440px;
+        height: 990px;
+        left: 0px;
+        top: 0px;
+        z-index: -100;
+      }
+
+      .фон1 {
+        position: absolute;
+        width: 1440px;
+        height: 990px;
+        left: 0px;
+        top: 0px;
+        z-index: -100;
+      }
+
+      .фон2 {
+        position: absolute;
+        width: 1440px;
+        height: 990px;
+        left: 0px;
+        top: 0px;
+        z-index: -100;
+      }
+
+.глаза {
+  position: absolute;
+  width: 93px;
+  height: 93px;
+  left: 255px;
+  top: 302px;
+}
+
+.губы {
+  position: absolute;
+  width: 93px;
+  height: 93px;
+  left: 255px;
+  top: 412px;
+}
+
+.брови {
+  position: absolute;
+  width: 93px;
+  height: 93px;
+  left: 255px;
+  top: 517px;
+}
+
+.волосы {
+  position: absolute;
+  width: 93px;
+  height: 93px;
+  left: 255px;
+  top: 625px;
+}
+
+.кожа {
+  position: absolute;
+  width: 93px;
+  height: 93px;
+  left: 255px;
+  top: 730px;
+}
+
+.eyer {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 170px;
+top: 312px;
+background: #35253A;
+transition: all .5s;
+}
+
+.eyeb {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 272px;
+top: 312px;
+background: #483530;
+transition: all .5s;
+}
+
+.eyew {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 374px;
+top: 312px;
+background: #E8E8E0;
+}
+
+.eyeg {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 476px;
+  top: 312px;
+  background: #42210B
+}
+
+.lipsr {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 170px;
+top: 419px;
+background: #AD7486;
+}
+
+.lipsb {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 272px;
+top: 419px;
+background: #A63C46;
+}
+
+.lipsw {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 374px;
+top: 419px;
+background: #502828;
+}
+
+.lipsg {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 476px;
+  top: 419px;
+  background: #DAA8A6;
+}
+
+.browr {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 170px;
+top: 525px;
+background: #C791A8;
+}
+
+.browb {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 272px;
+top: 525px;
+background: #4B382F;
+}
+
+.broww {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 374px;
+top: 525px;
+background: #DBDDD5;
+}
+
+.browg {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 476px;
+  top: 525px;
+  background: #8B523C;
+}
+
+.hairr {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 170px;
+top: 629px;
+background: #E8C3DD;
+}
+
+.hairb {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 272px;
+top: 629px;
+background: #2B2726;
+}
+
+.hairw {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 374px;
+top: 629px;
+background: #F1F4EA;
+}
+
+.hairg {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 476px;
+  top: 629px;
+  background: #8D4B34;
+}
+
+.skinr {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 170px;
+top: 735px;
+background: #EECCBF;
+}
+
+.skinb {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 272px;
+top: 735px;
+background: #D2A48A;
+}
+
+.skinw {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 374px;
+top: 735px;
+background: #6D4635;
+}
+
+.sking {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 476px;
+  top: 735px;
+  background: #F1E1D4;
+}
+
+
+.бровир {
+position: absolute;
+width: 340px;
+height: 42px;
+left: 825px;
+top: 348px;
+}
+
+.глазар {
+position: absolute;
+width: 273px;
+height: 41px;
+left: 862px;
+top: 391px;
+}
+
+
+.мордар {
+position: absolute;
+width: 1020px;
+height: 904px;
+left: 465px;
+top: 85px;
+z-index: -30;
+}
+
+.губыр {
+position: absolute;
+width: 142px;
+height: 56px;
+left: 923px;
+top: 574px;
+}
+
+
+.волосняр {
+position: absolute;
+width: 523.67px;
+height: 777.31px;
+left: 740.35px;
+top: 83.06px;
+z-index: -60;
+}
+
+.челкар {
+position: absolute;
+width: 463.58px;
+height: 697.36px;
+left: 758px;
+top: 67px;
+z-index: 100;
+}
+
+
+
+.мордач {
+  position: absolute;
+  width: 1020px;
+  height: 904px;
+  left: 465px;
+  top: 85px;
+  z-index: -30;
+}
+
+.глазач {
+  position: absolute;
+  width: 260px;
+  height: 46px;
+  left: 866px;
+  top: 385px;
+  z-index: 100;
+}
+
+.губыч {
+  position: absolute;
+  width: 137px;
+  height: 66px;
+  left: 930px;
+  top: 570px;
+}
+
+.брович {
+  position: absolute;
+  width: 353px;
+  height: 47px;
+  left: 820px;
+  top: 327px;
+}
+
+.волосняч {
+position: absolute;
+width: 862px;
+height: 771px;
+left: 540.35px;
+top: 175px;
+z-index: -60;
+}
+
+.челкач {
+position: absolute;
+width: 484px;
+height: 473px;
+left: 752px;
+top: 45px;
+}
+
+
+
+.мордаб {
+  position: absolute;
+  width: 1020px;
+  height: 904px;
+  left: 465px;
+  top: 85px;
+  z-index: -30;
+}
+
+.глазаб {
+  position: absolute;
+  width: 284px;
+  height: 44px;
+  top: 389px;
+  left: 854px;
+}
+
+.губыб {
+  position: absolute;
+  width: 130px;
+  height: 59px;
+  top: 578px;
+  left: 935px;
+}
+
+.бровиб {
+position: absolute;
+width: 345px;
+height: 34px;
+top: 350px;
+left: 825px;
+}
+
+.волосняб {
+position: absolute;
+width: 574px;
+height: 785px;
+left: 720px;
+top: 55px;
+z-index: -60;
+}
+
+.челкаб {
+position: absolute;
+width: 460px;
+height: 330px;
+left: 768px;
+top: 70px;
+}
+
+.мордаз {
+  position: absolute;
+  width: 1020px;
+  height: 904px;
+  left: 465px;
+  top: 85px;
+  z-index: -30;
+}
+
+.глазаз {
+  position: absolute;
+  width: 284px;
+  height: 44px;
+  top: 393px;
+  left: 854px;
+}
+
+.губыз {
+  position: absolute;
+  width: 130px;
+  height: 59px;
+  top: 576px;
+  left: 933px;
+}
+
+.бровиз {
+position: absolute;
+width: 340px;
+height: 46px;
+top: 342px;
+left: 827px;
+}
+
+.волосняз {
+position: absolute;
+width: 204px;
+height: 333px;
+left: 723px;
+top: 524px;
+z-index: -60;
+}
+
+.челказ {
+position: absolute;
+width: 824px;
+height: 999px;
+left: 545px;
+top: 37px;
+}
+
+
+
+h1 {
+  position: absolute;
+  left: 50px;
+  top: 10px;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 80px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+h2 {
+  position: absolute;
+  left: 50px;
+  top: 90px;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 80px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.фонр {
+position: absolute;
+width: 60px;
+height: 60px;
+left: 1325px;
+top: 566px;
+background-color: #E8C3DD;
+z-index: 100;
+}
+
+.фонг {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 1325px;
+  top: 643px;
+  background-color: #D4ECF2;
+  z-index: 100;
+}
+
+.фонч {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 1325px;
+  top: 720px;
+  background-color: #35253A;
+  z-index: 100;
+}
+
+.fon {
+  border: 4px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 70px;
+  height: 70px;
+}
+
+.tap {
+  display: none;
+  transition: all .1s;
+}
+
+.border {
+  border-radius: 80px;
+  transition: all 0,01s;
+}
+
+    </style>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".глаза").click(function(){
+      $(".глаза").animate({left: "55px"}, 500 )
+        $(".eyer").fadeTo("opacity",.999);
+        $(".eyeb").fadeTo("opacity",.999);
+        $(".eyew").fadeTo("opacity",.999);
+        $(".eyeg").fadeTo("opacity",.999);
+      });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".губы").click(function(){
+      $(".губы").animate({left: "55px"}, 500 )
+        $(".lipsr").fadeTo("opacity",.999);
+        $(".lipsb").fadeTo("opacity",.999);
+        $(".lipsw").fadeTo("opacity",.999);
+        $(".lipsg").fadeTo("opacity",.999);
+      });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".брови").click(function(){
+      $(".брови").animate({left: "55px"}, 500 )
+        $(".browr").fadeTo("opacity",.999);
+        $(".browb").fadeTo("opacity",.999);
+        $(".broww").fadeTo("opacity",.999);
+        $(".browg").fadeTo("opacity",.999);
+      });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".волосы").click(function(){
+      $(".волосы").animate({left: "55px"}, 500 )
+        $(".hairr").fadeTo("opacity",.999);
+        $(".hairb").fadeTo("opacity",.999);
+        $(".hairw").fadeTo("opacity",.999);
+        $(".hairg").fadeTo("opacity",.999);
+      });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".кожа").click(function(){
+      $(".кожа").animate({left: "55px"}, 500 )
+        $(".skinr").fadeTo("opacity",.999);
+        $(".skinb").fadeTo("opacity",.999);
+        $(".skinw").fadeTo("opacity",.999);
+        $(".sking").fadeTo("opacity",.999);
+      });
+    });
+    </script>
+
+    <!-- <script type="text/javascript">
+    $(document).ready(function(){
+      $("div").click(function(){
+      $(this).toggleClass("border");
+    });
+    });
+    </script> -->
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".eyer").click(function(){
+      $(".глазар").show();
+      $(".глазач").hide();
+      $(".глазаб").hide();
+      $(".глазаз").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".eyeb").click(function(){
+      $(".глазач").removeClass("tap");
+      $(".глазар").hide();
+      $(".глазаб").hide();
+      $(".глазаз").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".eyew").click(function(){
+      $(".глазаб").show();
+      $(".глазар").hide();
+      $(".глазач").hide();
+      $(".глазаз").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".eyeg").click(function(){
+      $(".глазаз").show();
+      $(".глазар").hide();
+      $(".глазаб").hide();
+      $(".глазач").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".lipsr").click(function(){
+      $(".губыр").show();
+      $(".губыч").hide();
+      $(".губыб").hide();
+      $(".губыз").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".lipsb").click(function(){
+      $(".губыч").show();
+      $(".губыр").hide();
+      $(".губыб").hide();
+      $(".губыз").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".lipsw").click(function(){
+      $(".губыб").show();
+      $(".губыр").hide();
+      $(".губыч").hide();
+      $(".губыз").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".lipsg").click(function(){
+      $(".губыз").show();
+      $(".губыр").hide();
+      $(".губыб").hide();
+      $(".губыч").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".browr").click(function(){
+      $(".бровир").show();
+      $(".брович").hide();
+      $(".бровиб").hide();
+      $(".бровиз").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".browb").click(function(){
+      $(".брович").show();
+      $(".бровир").hide();
+      $(".бровиб").hide();
+      $(".бровиз").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".broww").click(function(){
+      $(".бровиб").show();
+      $(".бровир").hide();
+      $(".брович").hide();
+      $(".бровиз").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".browg").click(function(){
+      $(".бровиз").show();
+      $(".бровир").hide();
+      $(".бровиб").hide();
+      $(".брович").hide();
+    });
+  });hair
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".hairr").click(function(){
+      $(".волосняр").show();
+      $(".волосняч").hide();
+      $(".волосняб").hide();
+      $(".волосняз").hide();
+      $(".челкар").show();
+      $(".челкач").hide();
+      $(".челкаб").hide();
+      $(".челказ").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".hairb").click(function(){
+      $(".волосняч").show();
+      $(".волосняр").hide();
+      $(".волосняб").hide();
+      $(".волосняз").hide();
+      $(".челкач").show();
+      $(".челкар").hide();
+      $(".челкаб").hide();
+      $(".челказ").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".hairw").click(function(){
+      $(".волосняб").show();
+      $(".волосняр").hide();
+      $(".волосняч").hide();
+      $(".волосняз").hide();
+      $(".челкаб").show();
+      $(".челкар").hide();
+      $(".челкач").hide();
+      $(".челказ").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".hairg").click(function(){
+      $(".волосняз").show();
+      $(".волосняр").hide();
+      $(".волосняб").hide();
+      $(".волосняч").hide();
+      $(".челказ").show();
+      $(".челкар").hide();
+      $(".челкаб").hide();
+      $(".челкач").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".skinr").click(function(){
+      $(".мордар").show();
+      $(".мордач").hide();
+      $(".мордаб").hide();
+      $(".мордаз").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".skinb").click(function(){
+      $(".мордач").show();
+      $(".мордар").hide();
+      $(".мордаб").hide();
+      $(".мордаз").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".skinw").click(function(){
+      $(".мордаб").show();
+      $(".мордар").hide();
+      $(".мордач").hide();
+      $(".мордаз").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".sking").click(function(){
+      $(".мордаз").show();
+      $(".мордар").hide();
+      $(".мордаб").hide();
+      $(".мордач").hide();
+    });
+  });hair
+    </script>
+
+
+    <script type="text/javascript">
+     $(document).ready(function(){
+      $(".sss").click(function(){
+      $(this).addClass(".fon")
+      });
+      });
+    </script>
+
+    <script type="text/javascript">
+     $(document).ready(function(){
+      $(".фонр").click(function(){
+      $(".фон3").hide()
+      $(".фон2").hide()
+      $(".фон1").show()
+      });
+      });
+    </script>
+
+    <script type="text/javascript">
+     $(document).ready(function(){
+      $(".фонч").click(function(){
+      $(".фон2").hide()
+      $(".фон1").hide()
+      $(".фон3").show()
+      });
+      });
+    </script>
+
+    <script type="text/javascript">
+     $(document).ready(function(){
+      $(".фонг").click(function(){
+      $(".фон1").hide()
+      $(".фон2").hide()
+      $(".фон2").show()
+      });
+      });
+    </script>
+
+
+  </head>
+  <body>
+
+<h1>СОБЕРИ СВОЕГО</h1>
+<h2>ИНФЛЮЕНСЕРА</h2>
+<img class="лого" src="лого.png" alt="лого">
+<img class="фон3" src="фон3.png" alt="фон3">
+<img class="фон2 tap" src="фон2.png" alt="фон2">
+<img class="фон1 tap" src="фон1.png" alt="фон1">
+
+<img class="брови" src="брови.png" alt="брови">
+<img class="волосы" src="волосы.png" alt="волосы">
+<img class="глаза" src="глаза.png" alt="глаза">
+<img class="губы" src="губы.png" alt="губы">
+<img class="кожа" src="кожа.png" alt="кожа">
+
+<div class="eyer tap"></div>
+<div class="eyeb tap"></div>
+<div class="eyew tap"></div>
+<div class="eyeg tap"></div>
+
+<div class="lipsr tap"></div>
+<div class="lipsb tap"></div>
+<div class="lipsw tap"></div>
+<div class="lipsg tap"></div>
+
+<div class="browr tap"></div>
+<div class="browb tap"></div>
+<div class="broww tap"></div>
+<div class="browg tap"></div>
+
+<div class="hairr tap"></div>
+<div class="hairb tap"></div>
+<div class="hairw tap"></div>
+<div class="hairg tap"></div>
+
+<div class="skinr tap"></div>
+<div class="skinb tap"></div>
+<div class="skinw tap"></div>
+<div class="sking tap">
+
+</div>
+
+<img class="бровир" src="бровиррр.png" alt="бровир">
+<img class="глазар" src="глазаррр.png" alt="глазар">
+<img class="губыр" src="губыррр.png" alt="губыр">
+<img class="волосняр" src="волосняррр.png" alt="волосняр">
+<img class="челкар" src="челкаррр.png" alt="челкар">
+<img class="мордар" src="мордаррр.png" alt="морда">
+
+<img class="брович tap" src="бровиччч.png" alt="брович">
+<img class="глазач tap" src="глазаччч.png" alt="глазач">
+<img class="губыч tap" src="губыччч.png" alt="губыч">
+<img class="волосняч tap" src="волосняччч.png" alt="волосняч">
+<img class="челкач tap" src="челкаччч.png" alt="челкач">
+<img class="мордач tap" src="мордаччч.png" alt="мордач">
+
+<img class="бровиб tap" src="бровиббб.png" alt="бровиб">
+<img class="глазаб tap" src="глазаббб.png" alt="глазаб">
+<img class="губыб tap" src="губыббб.png" alt="губыб">
+<img class="волосняб tap" src="волосняббб.png" alt="волосняб">
+<img class="челкаб tap" src="челкаббб.png" alt="челкаб">
+<img class="мордаб tap" src="мордаббб.png" alt="мордаб">
+
+<img class="бровиз tap" src="бровиззз.png" alt="бровиз">
+<img class="глазаз tap" src="глазаззз.png" alt="глазаз">
+<img class="губыз tap" src="губыззз.png" alt="губыз">
+<img class="волосняз tap" src="волосняззз.png" alt="волосняз">
+<img class="челказ tap" src="челказзз.png" alt="челказ">
+<img class="мордаз tap" src="мордаззз.png" alt="мордаз">
+
+<div class="фонч"></div>
+<div class="фонг"></div>
+<div class="фонр"></div>
+
+  </body>
+</html>
